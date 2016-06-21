@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+
+<script src="https://code.jquery.com/jquery-1.9.1.js" 
+integrity="sha256-e9gNBsAcA0DBuRWbm0oZfbiCyhjLrI6bmqAl5o+ZjUA=" 
+crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+function posts(){
+	$.ajax({url: "/",
+        type:"GET",
+		success: function(data){
+        	$("#div1").html(data);
+    }});
+}
+</script>
+
+<title>Aplicação Teste Nuova</title>
+</head>
+<body>
+	<p>
+
+
+		Click <a href="getPosts()">here</a> to see some entries from your
+		Facebook feed.
+	</p>
+</body>
+</html>
