@@ -31,3 +31,11 @@ $ java -jar target/FacebookNuovaLog.jar
 OU
 Rodar como Applicação SpringBoot, basta ir no eclipse marketplace e instalar o plugin do spring.
 
+### Rodar App
+
+
+```sh
+	localhost:8080
+```
+
+
