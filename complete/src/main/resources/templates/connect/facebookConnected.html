@@ -11,18 +11,17 @@ function posts(){
 	$.ajax({url: "/",
         type:"GET",
 		success: function(data){
-        	$("#div1").html(data);
-    }});
-}
+			$( "body" ).data( data );
+   
+					}});
+	}
 </script>
 
 <title>Aplicação Teste Nuova</title>
 </head>
 <body>
 	<p>
-
-
-		Click <a href="getPosts()">here</a> to see some entries from your
+		Click <a href="javascript:posts()">here</a> to see some entries from your
 		Facebook feed.
 	</p>
 </body>

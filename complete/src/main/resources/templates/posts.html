@@ -11,7 +11,7 @@
 	<body>
 		<h3><span th:text="${facebookProfile.name}">Some User</span>!</h3>
 			
-		<div th:each="post:${feed}">
+		<div th:each="post:${feed}" id="test">
 			<b th:text="${post.from.name}">de</b> escreveu:
 			<p th:text="${post.message}">Mensagens</p>
 			<img th:if="${post.picture}" th:src="${post.picture}"/>
